@@ -4,16 +4,20 @@
 
 This project uses a multi-agent development workflow. The agents work together as a team:
 
-### Agent Roles (Core Team):
+### Agent Roles:
 1. **product-owner**: Defines requirements, user stories, and validates deliverables
-2. **senior-engineer**: Implements features, writes code, fixes bugs
-3. **tester**: Creates tests, runs test suites, performs QA review
+2. **project-manager**: Coordinates work, breaks down tasks, tracks progress
+3. **software-architect**: System design, API design, technology decisions
+4. **senior-engineer**: Implements features, writes code, fixes bugs
+5. **tester**: Creates tests, runs test suites, performs QA review
 
 ### Workflow Rules:
-1. All new features start with product-owner defining requirements
-2. senior-engineer implements based on clear requirements
-3. tester creates tests after implementation
-4. product-owner validates against original requirements
+1. All new features start with **product-owner** defining requirements
+2. **project-manager** breaks work into tasks and coordinates
+3. **software-architect** designs before significant implementation
+4. **senior-engineer** implements based on design and requirements
+5. **tester** creates tests after implementation
+6. **product-owner** validates against original requirements
 
 ### Task States:
 - **TODO**: Ready to be worked on
@@ -77,8 +81,6 @@ Use the template in `templates/task-template.md`
 ## Expanding the Team
 
 Additional agents can be added to `.claude/agents/`:
-- **project-manager.md**: Coordinates work, tracks progress
-- **software-architect.md**: System design, technology decisions
 - **qa-reviewer.md**: Final quality gate, security audits
 
 See the original framework guide for agent definitions.

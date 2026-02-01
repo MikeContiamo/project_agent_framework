@@ -9,6 +9,8 @@ This framework provides a team of specialized AI agents that work together to bu
 | Agent | Role | Model |
 |-------|------|-------|
 | **Product Owner** | Defines requirements, user stories, and validates deliverables | opus |
+| **Project Manager** | Coordinates work, breaks down tasks, tracks progress | sonnet |
+| **Software Architect** | System design, API design, technology decisions | opus |
 | **Senior Engineer** | Implements features, fixes bugs, and writes code | sonnet |
 | **Tester** | Creates tests, runs test suites, and ensures quality | sonnet |
 
@@ -42,12 +44,22 @@ This framework provides a team of specialized AI agents that work together to bu
    Use the product-owner agent to define requirements for [feature description]
    ```
 
-2. **Implement** (Senior Engineer):
+2. **Plan & Coordinate** (Project Manager):
+   ```
+   Use the project-manager agent to break down the requirements into tasks
+   ```
+
+3. **Design** (Software Architect):
+   ```
+   Use the software-architect agent to design the system architecture
+   ```
+
+4. **Implement** (Senior Engineer):
    ```
    Use the senior-engineer agent to implement [task description]
    ```
 
-3. **Write Tests** (Tester):
+5. **Write Tests** (Tester):
    ```
    Use the tester agent to create tests for [feature]
    ```
@@ -58,6 +70,8 @@ This framework provides a team of specialized AI agents that work together to bu
 |--------|---------|
 | View agents | `/agents` |
 | Define requirements | `Use the product-owner agent to...` |
+| Coordinate tasks | `Use the project-manager agent to...` |
+| Design architecture | `Use the software-architect agent to...` |
 | Implement feature | `Use the senior-engineer agent to...` |
 | Create tests | `Use the tester agent to...` |
 
@@ -82,10 +96,12 @@ project_agent_framework/
 
 ## Workflow
 
-1. All features start with the **Product Owner** defining clear requirements
-2. The **Senior Engineer** implements the solution
-3. The **Tester** creates comprehensive tests
-4. Iterate until all acceptance criteria are met
+1. **Product Owner** defines clear requirements and user stories
+2. **Project Manager** breaks down work into tasks and coordinates
+3. **Software Architect** designs system architecture (for significant features)
+4. **Senior Engineer** implements the solution
+5. **Tester** creates comprehensive tests
+6. **Product Owner** validates against original requirements
 
 ## Task Tracking
 
@@ -98,8 +114,6 @@ Tasks are tracked in `docs/tasks/` as markdown files. Each task includes:
 ## Expanding the Team
 
 Additional agents can be added when needed:
-- **Project Manager**: Coordinates work and tracks progress
-- **Software Architect**: System design and technology decisions
 - **QA Reviewer**: Final quality gate and security audits
 
 See `docs/guides/` for instructions on adding new agents.

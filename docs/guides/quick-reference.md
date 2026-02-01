@@ -6,6 +6,8 @@
 |--------|---------|
 | View all agents | `/agents` |
 | Use Product Owner | `Use the product-owner agent to...` |
+| Use Project Manager | `Use the project-manager agent to...` |
+| Use Software Architect | `Use the software-architect agent to...` |
 | Use Senior Engineer | `Use the senior-engineer agent to...` |
 | Use Tester | `Use the tester agent to...` |
 
@@ -16,6 +18,20 @@
 Use the product-owner agent to define requirements for [feature]
 Use the product-owner agent to create user stories for [feature]
 Use the product-owner agent to validate [feature] against requirements
+```
+
+### Project Coordination
+```
+Use the project-manager agent to break down [feature] into tasks
+Use the project-manager agent to report project status
+Use the project-manager agent to coordinate the next sprint
+```
+
+### Architecture
+```
+Use the software-architect agent to design the [system/component]
+Use the software-architect agent to create an ADR for [decision]
+Use the software-architect agent to review the architecture of [component]
 ```
 
 ### Implementation
