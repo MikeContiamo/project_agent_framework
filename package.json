@@ -1,0 +1,21 @@
+{
+  "name": "project-agent-framework",
+  "version": "1.0.0",
+  "description": "Multi-agent development framework using Claude Code subagents",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"No tests configured yet\" && exit 0",
+    "lint": "echo \"No linter configured yet\" && exit 0"
+  },
+  "keywords": [
+    "claude-code",
+    "ai-agents",
+    "multi-agent",
+    "development-framework"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
