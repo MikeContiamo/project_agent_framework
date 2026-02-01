@@ -60,7 +60,23 @@ src/                # Source code
 tests/              # Test files
 ```
 
-## Conventions
+## Coding Conventions
+
+All agents MUST follow the conventions in `conventions/`:
+- `conventions/core.md` - Universal quality principles (REQUIRED for all agents)
+- `conventions/python.md` - For Python projects
+- `conventions/typescript.md` - For TypeScript projects
+- `conventions/testing.md` - Testing standards
+
+### Key Principles (from core.md):
+- Incremental progress over big-bang changes
+- Study existing patterns before implementing
+- Clear intent over clever code
+- Every commit must lint, pass tests, and explain "why"
+- Never hardcode secrets
+- Always use parameterized queries
+
+## Git Conventions
 
 ### Commit Messages:
 Follow conventional commits:
